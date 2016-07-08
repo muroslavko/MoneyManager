@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyManager.Rest", "MoneyManager.Rest\MoneyManager.Rest.csproj", "{CC36C676-8F34-46C1-AD7D-89F3397B80EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyManager.Db", "MoneyManager.Db\MoneyManager.Db.csproj", "{88E553F1-F7CF-4AE3-B8F2-6EFB8896A210}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyManager.DataAccess", "MoneyManager.DataAccess\MoneyManager.DataAccess.csproj", "{6D3EC87A-4F71-48D1-9AC5-EB9C500BDDF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{CC36C676-8F34-46C1-AD7D-89F3397B80EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC36C676-8F34-46C1-AD7D-89F3397B80EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC36C676-8F34-46C1-AD7D-89F3397B80EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88E553F1-F7CF-4AE3-B8F2-6EFB8896A210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E553F1-F7CF-4AE3-B8F2-6EFB8896A210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E553F1-F7CF-4AE3-B8F2-6EFB8896A210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E553F1-F7CF-4AE3-B8F2-6EFB8896A210}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D3EC87A-4F71-48D1-9AC5-EB9C500BDDF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D3EC87A-4F71-48D1-9AC5-EB9C500BDDF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D3EC87A-4F71-48D1-9AC5-EB9C500BDDF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D3EC87A-4F71-48D1-9AC5-EB9C500BDDF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
