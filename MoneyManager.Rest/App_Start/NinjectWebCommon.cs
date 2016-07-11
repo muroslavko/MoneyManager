@@ -1,3 +1,6 @@
+using MoneyManager.DataAccess.Base;
+using MoneyManager.Shared.Logger;
+
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(MoneyManager.Rest.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(MoneyManager.Rest.App_Start.NinjectWebCommon), "Stop")]
 
@@ -61,6 +64,12 @@ namespace MoneyManager.Rest.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Bind<IDatabaseFactory>().To<DatabaseFactory>().InRequestScope();
+            kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InRequestScope();
+
+            kernel.Bind<ILoggerFactory>().To<LoggerFactory>();
+            //kernel.Bind<ApplicationUserManager>().ToSelf();
+            //kernel.Bind<ApplicationSignInManager>().ToSelf();
         }        
     }
 }

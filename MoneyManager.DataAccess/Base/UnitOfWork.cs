@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MoneyManager.DataAccess.Base
 {
-    class UnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private MMDbContext _dataContext;
         private readonly IDatabaseFactory dbFactory;
@@ -34,5 +34,10 @@ namespace MoneyManager.DataAccess.Base
         {
             DbContext.SaveChanges();
         }
+    }
+
+    public interface IUnitOfWork
+    {
+        void SaveChanges();
     }
 }

@@ -400,9 +400,17 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MoneyManager.DataAccess\MoneyManager.DataAccess.csproj">
+      <Project>{6D3EC87A-4F71-48D1-9AC5-EB9C500BDDF8}</Project>
+      <Name>MoneyManager.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MoneyManager.Db\MoneyManager.Db.csproj">
       <Project>{88e553f1-f7cf-4ae3-b8f2-6efb8896a210}</Project>
       <Name>MoneyManager.Db</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MoneyManager.Shared\MoneyManager.Shared.csproj">
+      <Project>{B96FC073-490D-4BA8-AE27-D14F0660C035}</Project>
+      <Name>MoneyManager.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
