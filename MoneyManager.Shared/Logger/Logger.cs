@@ -17,11 +17,19 @@ namespace MoneyManager.Shared.Logger
             if (_log.IsDebugEnabled)
                 _log.Debug(message);
         }
+
+        public void Debug(Exception ex)
+        {
+            if (_log.IsDebugEnabled)
+                _log.Debug(ex);
+        }
     }
 
     public interface ILogger
     {
         void Debug(string message);
+
+        void Debug(Exception ex);
 
         //void Debug(CallerInfo info, string message, params object[] args);
 

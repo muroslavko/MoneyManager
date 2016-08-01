@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MoneyManager.DataAccess.Base;
+﻿using MoneyManager.DataAccess.Base;
+using MoneyManager.DataAccess.Interfaces;
 using MoneyManager.Db.Entity;
 
 namespace MoneyManager.DataAccess.Repositories
 {
-    class PersonRepository : Repository<Person>
+    public class PersonRepository : Repository<Person>, IPersonRepository
     {
         public PersonRepository(IDatabaseFactory databaseFactory) : base(databaseFactory)
         {

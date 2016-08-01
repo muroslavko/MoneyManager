@@ -20,7 +20,8 @@ namespace MoneyManager.Db.DataAccess
 
         }
 
-        public virtual DbSet<Person> Person { get; set; }
+        public virtual DbSet<Person> Persons { get; set; }
 
+        public virtual DbSet<Transaction> Transactions { get; set; }
     }
 }

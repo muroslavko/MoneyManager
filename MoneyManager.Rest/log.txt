@@ -1,2 +1,0 @@
-2016-07-11 19:36:48,029 [5] DEBUG MoneyManager.Rest.Controllers.HomeController [(null)] - Index
-2016-07-11 19:36:56,929 [6] DEBUG MoneyManager.Rest.Controllers.HomeController [(null)] - Index

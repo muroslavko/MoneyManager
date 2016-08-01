@@ -58,6 +58,7 @@
     <Compile Include="Base\UnitOfWork.cs" />
     <Compile Include="DataAccessProject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Interfaces\IPersonRepository.cs" />
     <Compile Include="Repositories\PersonRepository.cs" />
   </ItemGroup>
   <ItemGroup>

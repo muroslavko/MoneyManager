@@ -8,12 +8,12 @@
 
 //namespace MoneyManager.DataAccess
 //{
-//    static class DataAccessProject
+//    public static class DataAccessProject
 //    {
-//        private static void RegisterServices(IKernel kernel)
+//        public static void RegisterServices(IKernel kernel)
 //        {
-//            kernel.Bind<IDatabaseFactory>().To<DatabaseFactory>().InRequestScope();
-//            kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InRequestScope();
+//            kernel.Bind<IDatabaseFactory>().To<DatabaseFactory>().InTransientScope();
+//            kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InTransientScope();
 //        }
 //    }
 //}

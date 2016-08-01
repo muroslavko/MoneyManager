@@ -1,4 +1,11 @@
+using MoneyManager.DataAccess;
 using MoneyManager.DataAccess.Base;
+using MoneyManager.DataAccess.Interfaces;
+using MoneyManager.DataAccess.Repositories;
+using MoneyManager.Db.Entity;
+using MoneyManager.Services.Dto;
+using MoneyManager.Services.Mappers;
+using MoneyManager.Services.Services;
 using MoneyManager.Shared.Logger;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(MoneyManager.Rest.App_Start.NinjectWebCommon), "Start")]
@@ -67,9 +74,20 @@ namespace MoneyManager.Rest.App_Start
             kernel.Bind<IDatabaseFactory>().To<DatabaseFactory>().InRequestScope();
             kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InRequestScope();
 
+            kernel.Bind<IPersonRepository>().To<PersonRepository>();
+
             kernel.Bind<ILoggerFactory>().To<LoggerFactory>();
+
+
+            kernel.Bind<IPersonService>().To<PersonService>();
+
+            kernel.Bind<IMapper<PersonDto, Person>>().To<PersonMapper>();
+
+
             //kernel.Bind<ApplicationUserManager>().ToSelf();
             //kernel.Bind<ApplicationSignInManager>().ToSelf();
+
+            //DataAccessProject.RegisterServices(kernel);
         }        
     }
 }

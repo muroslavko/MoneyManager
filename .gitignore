@@ -250,3 +250,5 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+/MoneyManager.Rest/bower_components
+/MoneyManager.Rest/logs

@@ -89,5 +89,14 @@ namespace MoneyManager.DataAccess.Base
 
     public interface IRepository<T>
     {
+        IQueryable<T> Query();
+        IQueryable<T> QueryIncluding(params Expression<Func<T, object>>[] includes);
+        T Get(long id);
+        T Get(Func<T, bool> predicate);
+        void Update(T entity);
+        void UpdateAndCommit(T entity);
+
+        void Delete(T entity);
+        void DeleteAndCommit(T entity);
     }
 }
